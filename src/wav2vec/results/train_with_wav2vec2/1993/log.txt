@@ -1,0 +1,6944 @@
+2024-04-10 00:09:00,719 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 00:09:00,720 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 00:09:02,579 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 00:09:03,226 - prepare - INFO - Created results/train_with_wav2vec2/1993/train.json
+2024-04-10 00:09:03,280 - prepare - INFO - Created results/train_with_wav2vec2/1993/valid.json
+2024-04-10 00:09:03,344 - prepare - INFO - Created results/train_with_wav2vec2/1993/test.json
+2024-04-10 00:09:03,344 - prepare - INFO - Created results/train_with_wav2vec2/1993/train.json, results/train_with_wav2vec2/1993/valid.json, and results/train_with_wav2vec2/1993/test.json
+2024-04-10 00:09:03,346 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:09:03,348 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 176, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 110, in dataio_prep
+    from_didatasets=[datasets["train"]],
+TypeError: 'NoneType' object is not subscriptable
+2024-04-10 00:13:27,519 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 00:13:27,520 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 00:13:29,075 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 00:13:29,244 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:13:29,246 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:13:29,247 - speechbrain.dataio.encoder - DEBUG - Would load categorical encoding from results/train_with_wav2vec2/1993/save\label_encoder.txt, but file doesn't exist yet.
+2024-04-10 00:13:29,248 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 273, in load_or_create
+    self.update_from_didataset(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 195, in update_from_didataset
+    with didataset.output_keys_as([output_key]):
+AttributeError: 'str' object has no attribute 'output_keys_as'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 112, in dataio_prep
+    label_encoder.load_or_create(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 280, in load_or_create
+    self.load(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 607, in load
+    lab2ind, ind2lab, extras = self._load_literal(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 779, in _load_literal
+    with open(path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/train_with_wav2vec2/1993/save\\label_encoder.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 186, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 151, in dataio_prep
+    logger.error(f"Error during dataset preparation: {e}")
+TypeError: error() missing 1 required positional argument: 'msg'
+2024-04-10 00:15:03,060 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 00:15:03,061 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 00:15:04,434 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 00:15:04,565 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:15:04,566 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:15:04,567 - speechbrain.dataio.encoder - DEBUG - Would load categorical encoding from results/train_with_wav2vec2/1993/save\label_encoder.txt, but file doesn't exist yet.
+2024-04-10 00:15:04,568 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 273, in load_or_create
+    self.update_from_didataset(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 195, in update_from_didataset
+    with didataset.output_keys_as([output_key]):
+AttributeError: 'str' object has no attribute 'output_keys_as'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 119, in dataio_prep
+    label_encoder.load_or_create(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 280, in load_or_create
+    self.load(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 607, in load
+    lab2ind, ind2lab, extras = self._load_literal(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 779, in _load_literal
+    with open(path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/train_with_wav2vec2/1993/save\\label_encoder.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 193, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 158, in dataio_prep
+    logger.error(f"Error during dataset preparation: {e}")
+TypeError: error() missing 1 required positional argument: 'msg'
+2024-04-10 00:16:46,857 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 00:16:46,858 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 00:16:48,561 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 00:16:48,705 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:16:48,705 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:16:48,707 - speechbrain.dataio.encoder - DEBUG - Would load categorical encoding from results/train_with_wav2vec2/1993/save\label_encoder.txt, but file doesn't exist yet.
+2024-04-10 00:16:48,709 - __main__ - ERROR - Error during dataset preparation: [Errno 2] No such file or directory: 'results/train_with_wav2vec2/1993/save\\label_encoder.txt'
+Traceback (most recent call last):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 273, in load_or_create
+    self.update_from_didataset(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 195, in update_from_didataset
+    with didataset.output_keys_as([output_key]):
+AttributeError: 'str' object has no attribute 'output_keys_as'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 121, in dataio_prep
+    label_encoder.load_or_create(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 280, in load_or_create
+    self.load(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 607, in load
+    lab2ind, ind2lab, extras = self._load_literal(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 779, in _load_literal
+    with open(path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/train_with_wav2vec2/1993/save\\label_encoder.txt'
+2024-04-10 00:16:48,715 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 273, in load_or_create
+    self.update_from_didataset(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 195, in update_from_didataset
+    with didataset.output_keys_as([output_key]):
+AttributeError: 'str' object has no attribute 'output_keys_as'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 195, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 121, in dataio_prep
+    label_encoder.load_or_create(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 280, in load_or_create
+    self.load(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 607, in load
+    lab2ind, ind2lab, extras = self._load_literal(path)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\encoder.py", line 779, in _load_literal
+    with open(path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/train_with_wav2vec2/1993/save\\label_encoder.txt'
+2024-04-10 00:22:36,605 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 00:22:36,607 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 00:22:37,762 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 00:22:37,895 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:22:37,896 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:22:37,897 - __main__ - ERROR - Error during dataset preparation: name 'CategoricalEncoder' is not defined
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 113, in dataio_prep
+    label_encoder = CategoricalEncoder()
+NameError: name 'CategoricalEncoder' is not defined
+2024-04-10 00:22:37,900 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 202, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 113, in dataio_prep
+    label_encoder = CategoricalEncoder()
+NameError: name 'CategoricalEncoder' is not defined
+2024-04-10 00:23:16,664 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 00:23:16,664 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 00:23:17,954 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 00:23:18,077 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:23:18,078 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:23:18,079 - __main__ - ERROR - Error during dataset preparation: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'path'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 129, in dataio_prep
+    label_encoder.update_from_didataset(
+TypeError: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'path'
+2024-04-10 00:23:18,081 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 204, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 129, in dataio_prep
+    label_encoder.update_from_didataset(
+TypeError: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'path'
+2024-04-10 00:26:36,456 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 00:26:36,458 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 00:26:37,926 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 00:26:38,513 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:26:38,514 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 00:26:38,518 - __main__ - ERROR - Error during dataset preparation: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'from_didatasets'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 130, in dataio_prep
+    label_encoder.update_from_didataset(
+TypeError: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'from_didatasets'
+2024-04-10 00:26:38,522 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 204, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 130, in dataio_prep
+    label_encoder.update_from_didataset(
+TypeError: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'from_didatasets'
+2024-04-10 14:28:33,614 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 14:28:33,616 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 14:28:36,119 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 14:28:36,305 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:28:36,306 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:28:36,309 - __main__ - ERROR - Error during dataset preparation: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'from_didatasets'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 130, in dataio_prep
+    label_encoder.update_from_didataset(
+TypeError: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'from_didatasets'
+2024-04-10 14:28:36,311 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 204, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 130, in dataio_prep
+    label_encoder.update_from_didataset(
+TypeError: CategoricalEncoder.update_from_didataset() got an unexpected keyword argument 'from_didatasets'
+2024-04-10 14:51:37,558 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 14:51:37,558 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 14:51:38,937 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 14:51:40,376 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:51:40,377 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:51:40,379 - __main__ - ERROR - Error during dataset preparation: 'DynamicItemDataset' object has no attribute 'unique_values'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = train_dataset.unique_values("emo")
+AttributeError: 'DynamicItemDataset' object has no attribute 'unique_values'
+2024-04-10 14:51:40,380 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 203, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = train_dataset.unique_values("emo")
+AttributeError: 'DynamicItemDataset' object has no attribute 'unique_values'
+2024-04-10 14:54:14,561 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 14:54:14,565 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 14:54:15,841 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 14:54:15,956 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:54:15,957 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:54:15,961 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 175, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 14:54:15,969 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 212, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 175, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 14:59:05,949 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 14:59:05,950 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 14:59:07,102 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 14:59:07,230 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:59:07,230 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 14:59:07,233 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 14:59:07,236 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 218, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 15:03:19,870 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 15:03:19,871 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 15:03:21,315 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 15:03:21,435 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:03:21,435 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:03:21,440 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 179, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 15:03:21,446 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 216, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 179, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 15:05:36,607 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 15:05:36,609 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 15:05:37,923 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 15:05:38,039 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:05:38,040 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:05:38,043 - __main__ - ERROR - Error during dataset preparation: 'DynamicItemDataset' object has no attribute 'ids'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 179, in get_unique_labels
+    for sample_id in dataset.ids:
+AttributeError: 'DynamicItemDataset' object has no attribute 'ids'
+2024-04-10 15:05:38,045 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 218, in <module>
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 179, in get_unique_labels
+    for sample_id in dataset.ids:
+AttributeError: 'DynamicItemDataset' object has no attribute 'ids'
+2024-04-10 15:06:49,534 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 15:06:49,535 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 15:06:50,723 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 15:06:50,832 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:06:50,832 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:06:50,835 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 15:06:50,840 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 220, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 15:09:01,564 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 15:09:01,565 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 15:09:02,798 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 15:09:02,917 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:09:02,918 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 15:09:02,919 - __main__ - ERROR - Error during dataset preparation: local variable 'audio_pipeline' referenced before assignment
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 126, in dataio_prep
+    dynamic_items=[audio_pipeline, label_pipeline],
+UnboundLocalError: local variable 'audio_pipeline' referenced before assignment
+2024-04-10 15:09:02,920 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 221, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 126, in dataio_prep
+    dynamic_items=[audio_pipeline, label_pipeline],
+UnboundLocalError: local variable 'audio_pipeline' referenced before assignment
+2024-04-10 16:22:11,849 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 16:22:11,853 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 16:22:13,624 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 16:22:13,760 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:22:13,760 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:22:13,765 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 16:22:13,771 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 220, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 16:24:08,023 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 16:24:08,024 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 16:24:09,479 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 16:24:09,616 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:24:09,617 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:24:09,619 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 178, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 16:24:09,623 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 219, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 178, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 16:26:39,678 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 16:26:39,680 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 16:26:41,004 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 16:26:41,125 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:26:41,126 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:26:41,129 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 16:26:41,134 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 222, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 16:29:38,868 - speechbrain.core - INFO - Beginning experiment!
+2024-04-10 16:29:38,871 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-10 16:29:40,810 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-10 16:29:40,925 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:29:40,927 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-10 16:29:40,928 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-10 16:29:40,934 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 220, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-11 10:30:41,055 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 10:30:41,056 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 10:30:43,298 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 10:30:43,443 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 10:30:43,445 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 10:30:43,448 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-11 10:30:43,454 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 220, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-11 11:32:28,045 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 11:32:28,047 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 11:32:29,528 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 11:32:29,655 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 11:32:29,656 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 11:32:29,660 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-11 11:32:29,665 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 220, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-11 11:57:24,118 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 11:57:24,121 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 11:57:26,265 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 11:57:26,407 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 11:57:26,409 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 11:57:26,413 - __main__ - ERROR - Error during dataset preparation: 'emo'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-11 11:57:26,419 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 223, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "emo")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 180, in get_unique_labels
+    for sample in dataset:
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\dataio\dataset.py", line 167, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 463, in compute_outputs
+    self._prepare_run(data)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 519, in _prepare_run
+    self.get_selected_node_ids(self.output_mapping.values())
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in get_selected_node_ids
+    return [self.key_to_node[key] for key in selected_keys]
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\data_pipeline.py", line 511, in <listcomp>
+    return [self.key_to_node[key] for key in selected_keys]
+KeyError: 'emo'
+2024-04-11 12:46:48,307 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 12:46:48,308 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 12:46:50,482 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 12:46:50,647 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:46:50,648 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:46:50,651 - __main__ - ERROR - Error during dataset preparation: 'dict' object has no attribute 'item'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "label")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    data_point = sample.item
+AttributeError: 'dict' object has no attribute 'item'
+2024-04-11 12:46:50,655 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 223, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 131, in dataio_prep
+    labels = get_unique_labels(train_dataset, "label")
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 181, in get_unique_labels
+    data_point = sample.item
+AttributeError: 'dict' object has no attribute 'item'
+2024-04-11 12:53:33,541 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 12:53:33,545 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 12:53:35,577 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 12:53:35,779 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:53:35,780 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:53:35,787 - __main__ - ERROR - Error during dataset preparation: 'CategoricalEncoder' object has no attribute 'add_labels'
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 132, in dataio_prep
+    label_encoder.add_labels(labels)
+AttributeError: 'CategoricalEncoder' object has no attribute 'add_labels'
+2024-04-11 12:53:35,790 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 226, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 132, in dataio_prep
+    label_encoder.add_labels(labels)
+AttributeError: 'CategoricalEncoder' object has no attribute 'add_labels'
+2024-04-11 12:55:12,653 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 12:55:12,657 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 12:55:14,653 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 12:55:14,884 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:55:14,885 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:55:14,894 - __main__ - ERROR - Error during dataset preparation: name 'json' is not defined
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 137, in dataio_prep
+NameError: name 'json' is not defined
+2024-04-11 12:55:14,899 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 229, in <module>
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 137, in dataio_prep
+NameError: name 'json' is not defined
+2024-04-11 12:55:28,454 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 12:55:28,455 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 12:55:29,966 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 12:55:30,106 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:55:30,107 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:55:30,108 - __main__ - ERROR - Error during dataset preparation: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 121, in dataio_prep
+    label_encoder = json.load(f)
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-04-11 12:55:30,115 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 229, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 121, in dataio_prep
+    label_encoder = json.load(f)
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-04-11 12:56:54,691 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 12:56:54,693 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 12:56:56,562 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 12:56:56,750 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:56:56,751 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:56:56,761 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-11 12:56:56,762 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 232, in <module>
+    emo_id_brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'
+2024-04-11 12:58:56,353 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 12:58:56,354 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 12:58:58,221 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 12:58:58,441 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:58:58,443 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:58:58,443 - __main__ - ERROR - Error during dataset preparation: name 'json' is not defined
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 119, in dataio_prep
+    label_encoder = json.load(f)
+NameError: name 'json' is not defined
+2024-04-11 12:58:58,445 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 209, in <module>
+    datasets = dataio_prep(hparams)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 119, in dataio_prep
+    label_encoder = json.load(f)
+NameError: name 'json' is not defined
+2024-04-11 12:59:18,472 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 12:59:18,473 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 12:59:20,525 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 12:59:20,724 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:59:20,726 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 12:59:20,732 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 213, in <module>
+    with sb.utils.distributed.run_on_main():
+TypeError: run_on_main() missing 1 required positional argument: 'func'
+2024-04-11 13:02:24,214 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 13:02:24,215 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 13:02:26,072 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 13:02:26,255 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:02:26,255 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:02:26,261 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 231, in <module>
+    with sb.utils.distributed.run_on_main():
+TypeError: run_on_main() missing 1 required positional argument: 'func'
+2024-04-11 13:03:35,585 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 13:03:35,586 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 13:03:36,982 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 13:03:37,162 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:03:37,162 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:03:37,168 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 213, in <module>
+    with sb.utils.distributed.run_on_main():
+TypeError: run_on_main() missing 1 required positional argument: 'func'
+2024-04-11 13:18:26,373 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 13:18:26,374 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 13:18:28,248 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 13:18:28,435 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:18:28,435 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 228, in <module>
+    with sb.utils.distributed.run_on_main():
+TypeError: run_on_main() missing 1 required positional argument: 'func'
+2024-04-11 13:23:04,602 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 13:23:04,605 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 13:23:06,330 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 13:23:06,492 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:23:06,493 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:23:06,499 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 238, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 229, in initialize_brain
+    return EmoIdBrain(
+TypeError: Brain.__init__() got an unexpected keyword argument 'device'
+2024-04-11 13:24:32,208 - speechbrain.core - INFO - Beginning experiment!
+2024-04-11 13:24:32,209 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-11 13:24:33,910 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-11 13:24:34,081 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:24:34,082 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-11 13:24:34,088 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-11 13:24:34,088 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 240, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 229, in initialize_brain
+    brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'
+2024-04-12 12:32:11,890 - speechbrain.core - INFO - Beginning experiment!
+2024-04-12 12:32:11,890 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-12 12:32:14,025 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-12 12:32:14,197 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-12 12:32:14,199 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-12 12:32:14,200 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-12 12:32:14,200 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 240, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 229, in initialize_brain
+    brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'
+2024-04-13 10:53:06,093 - speechbrain.core - INFO - Beginning experiment!
+2024-04-13 10:53:06,094 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-13 10:53:07,733 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-13 10:53:07,856 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 10:53:07,858 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 10:53:07,861 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-13 10:53:07,865 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 241, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 230, in initialize_brain
+    brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'
+2024-04-13 11:03:33,369 - speechbrain.core - INFO - Beginning experiment!
+2024-04-13 11:03:33,371 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-13 11:03:34,573 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-13 11:03:34,681 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:03:34,682 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:03:34,684 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-13 11:03:34,684 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 244, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 233, in initialize_brain
+    brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'
+2024-04-13 11:05:45,898 - speechbrain.core - INFO - Beginning experiment!
+2024-04-13 11:05:45,899 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-13 11:05:47,177 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-13 11:05:47,290 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:05:47,290 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:05:47,294 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-13 11:05:47,294 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 244, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 233, in initialize_brain
+    brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'
+2024-04-13 11:06:13,358 - speechbrain.core - INFO - Beginning experiment!
+2024-04-13 11:06:13,358 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-13 11:06:14,139 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-13 11:06:14,236 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:06:14,237 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:06:14,240 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-13 11:06:14,240 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 244, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 233, in initialize_brain
+    brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'
+2024-04-13 11:11:24,577 - speechbrain.core - INFO - Beginning experiment!
+2024-04-13 11:11:24,577 - speechbrain.core - INFO - Experiment folder: results/train_with_wav2vec2/1993
+2024-04-13 11:11:25,739 - speechbrain.utils.superpowers - DEBUG - absl-py==1.4.0
+altair==5.2.0
+appdirs==1.4.4
+astunparse==1.6.3
+attrs==23.2.0
+audioread==3.0.1
+black==19.10b0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2024.2.2
+cffi==1.16.0
+cfgv==3.4.0
+charset-normalizer==3.3.2
+click==8.0.4
+colorama==0.4.6
+contourpy==1.2.0
+cycler==0.12.1
+Cython==3.0.9
+decorator==5.1.1
+distlib==0.3.8
+dm-tree==0.1.8
+entrypoints==0.3
+exceptiongroup==1.2.0
+filelock==3.13.1
+flake8==3.7.9
+flatbuffers==23.5.26
+fonttools==4.49.0
+fsspec==2024.2.0
+gast==0.4.0
+gitdb==4.0.11
+GitPython==3.1.42
+google-auth==2.28.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+grpcio==1.62.0
+h5py==3.10.0
+huggingface-hub==0.21.4
+HyperPyYAML==1.2.2
+identify==2.5.35
+idna==3.6
+iniconfig==2.0.0
+jax==0.4.25
+Jinja2==3.1.3
+joblib==1.3.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+keras==2.12.0
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.5
+lazy_loader==0.3
+libclang==16.0.6
+librosa==0.10.1
+llvmlite==0.42.0
+logger==1.4
+Markdown==3.5.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.3
+mccabe==0.6.1
+mdurl==0.1.2
+ml-dtypes==0.2.0
+mpmath==1.3.0
+msgpack==1.0.8
+networkx==3.2.1
+nodeenv==1.8.0
+numba==0.59.0
+numpy==1.23.5
+oauthlib==3.2.2
+opt-einsum==3.3.0
+packaging==23.2
+pandas==2.2.1
+pathspec==0.12.1
+pillow==10.2.0
+platformdirs==4.2.0
+pluggy==1.4.0
+pooch==1.8.1
+pre-commit==3.6.2
+protobuf==4.25.3
+pyarrow==15.0.2
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycodestyle==2.5.0
+pycparser==2.21
+pydeck==0.8.1b0
+pyflakes==2.1.1
+pygame==2.5.2
+Pygments==2.17.2
+pygtrie==2.5.0
+pyht==0.0.27
+pyparsing==3.1.2
+pytest==7.4.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+referencing==0.34.0
+regex==2023.12.25
+requests==2.31.0
+requests-oauthlib==1.3.1
+resampy==0.4.3
+rich==13.7.1
+rpds-py==0.18.0
+rsa==4.9
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+safetensors==0.4.2
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+seaborn==0.13.2
+sentencepiece==0.2.0
+six==1.16.0
+smmap==5.0.1
+soundfile==0.12.1
+soxr==0.3.7
+speechbrain==1.0.0
+streamlit==1.32.2
+sympy==1.12
+tenacity==8.2.3
+tensorboard==2.12.3
+tensorboard-data-server==0.7.2
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.12.0
+tensorflow-cpu==2.10.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+tensorflow-model-optimization==0.8.0
+termcolor==2.4.0
+threadpoolctl==3.3.0
+tokenizers==0.15.2
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+torch==2.2.1
+torchaudio==2.2.1
+torchvision==0.17.1
+tornado==6.4
+tqdm==4.66.2
+transformers==4.38.2
+typed-ast==1.5.5
+typing_extensions==4.10.0
+tzdata==2024.1
+urllib3==2.2.1
+virtualenv==20.25.1
+watchdog==4.0.0
+Werkzeug==3.0.1
+wrapt==1.14.1
+yamllint==1.23.0
+
+
+2024-04-13 11:11:25,845 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:11:25,845 - prepare - INFO - Preparation completed in previous run, skipping.
+2024-04-13 11:11:25,851 - speechbrain.core - INFO - Info: ckpt_interval_minutes arg from hparam file is used
+2024-04-13 11:11:25,851 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 244, in <module>
+    with sb.utils.distributed.run_on_main(initialize_brain):
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 60, in run_on_main
+    main_process_only(func)(*args, **kwargs)
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\utils\distributed.py", line 102, in main_proc_wrapped_func
+    result = function(*args, **kwargs)
+  File "D:\voice-emo\src\wav2vec\train_with_wav2vec.py", line 233, in initialize_brain
+    brain = EmoIdBrain(
+  File "D:\voice-emo\venv\lib\site-packages\speechbrain\core.py", line 715, in __init__
+    torch.cuda.set_device(int(self.device[-1]))
+  File "D:\voice-emo\venv\lib\site-packages\torch\cuda\__init__.py", line 408, in set_device
+    torch._C._cuda_setDevice(device)
+AttributeError: module 'torch._C' has no attribute '_cuda_setDevice'

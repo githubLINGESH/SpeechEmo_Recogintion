@@ -1,0 +1,4 @@
+tensorflow-directml-plugin
+numpy 
+pandas
+librosa

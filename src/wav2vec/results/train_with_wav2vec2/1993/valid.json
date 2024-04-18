@@ -1,0 +1,182 @@
+{
+  "1001_IWW_HAP_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_IWW_HAP_XX_pitch_augmented.wav",
+    "length": 1.968625,
+    "label": "happy"
+  },
+  "1001_ITH_HAP_XX_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_ITH_HAP_XX_noise_augmented.wav",
+    "length": 2.469125,
+    "label": "happy"
+  },
+  "1001_ITS_DIS_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\disgust\\1001_ITS_DIS_XX_pitch_augmented.wav",
+    "length": 2.2021875,
+    "label": "disgust"
+  },
+  "1001_DFA_HAP_XX_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_DFA_HAP_XX_noise_augmented.wav",
+    "length": 1.8685,
+    "label": "happy"
+  },
+  "1001_IWL_DIS_XX": {
+    "wav": "D:\\voice-emo\\dat\\disgust\\1001_IWL_DIS_XX.wav",
+    "length": 2.56925,
+    "label": "disgust"
+  },
+  "1001_ITH_DIS_XX": {
+    "wav": "D:\\voice-emo\\dat\\disgust\\1001_ITH_DIS_XX.wav",
+    "length": 2.1688125,
+    "label": "disgust"
+  },
+  "1001_DFA_NEU_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\neutral\\1001_DFA_NEU_XX_pitch_augmented.wav",
+    "length": 2.035375,
+    "label": "neutral"
+  },
+  "1001_IEO_HAP_MD": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_IEO_HAP_MD.wav",
+    "length": 1.6683125,
+    "label": "happy"
+  },
+  "1001_IEO_ANG_HI": {
+    "wav": "D:\\voice-emo\\dat\\angry\\1001_IEO_ANG_HI.wav",
+    "length": 1.93525,
+    "label": "angry"
+  },
+  "1001_TSI_HAP_XX_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_TSI_HAP_XX_noise_augmented.wav",
+    "length": 2.1688125,
+    "label": "happy"
+  },
+  "1001_DFA_SAD_XX_stretch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\sad\\1001_DFA_SAD_XX_stretch_augmented.wav",
+    "length": 2.5025,
+    "label": "sad"
+  },
+  "1001_IOM_NEU_XX_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\neutral\\1001_IOM_NEU_XX_noise_augmented.wav",
+    "length": 2.469125,
+    "label": "neutral"
+  },
+  "1001_IWW_SAD_XX_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\sad\\1001_IWW_SAD_XX_noise_augmented.wav",
+    "length": 2.035375,
+    "label": "sad"
+  },
+  "1001_IEO_ANG_LO": {
+    "wav": "D:\\voice-emo\\dat\\angry\\1001_IEO_ANG_LO.wav",
+    "length": 2.06875,
+    "label": "angry"
+  },
+  "1001_IWL_HAP_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_IWL_HAP_XX_pitch_augmented.wav",
+    "length": 2.102125,
+    "label": "happy"
+  },
+  "1001_IEO_SAD_MD_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\sad\\1001_IEO_SAD_MD_pitch_augmented.wav",
+    "length": 1.7350625,
+    "label": "sad"
+  },
+  "1001_TIE_ANG_XX_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\angry\\1001_TIE_ANG_XX_noise_augmented.wav",
+    "length": 3.103125,
+    "label": "angry"
+  },
+  "DC_su03_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\surprise\\DC_su03_pitch_augmented.wav",
+    "length": 5.14275,
+    "label": "surprise"
+  },
+  "1001_ITS_NEU_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\neutral\\1001_ITS_NEU_XX_pitch_augmented.wav",
+    "length": 2.43575,
+    "label": "neutral"
+  },
+  "1001_IOM_FEA_XX_stretch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\fear\\1001_IOM_FEA_XX_stretch_augmented.wav",
+    "length": 3.54525,
+    "label": "fear"
+  },
+  "1001_IEO_HAP_HI_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_IEO_HAP_HI_noise_augmented.wav",
+    "length": 1.7684375,
+    "label": "happy"
+  },
+  "1001_TSI_NEU_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\neutral\\1001_TSI_NEU_XX_pitch_augmented.wav",
+    "length": 2.43575,
+    "label": "neutral"
+  },
+  "1001_IEO_SAD_MD": {
+    "wav": "D:\\voice-emo\\dat\\sad\\1001_IEO_SAD_MD.wav",
+    "length": 1.7350625,
+    "label": "sad"
+  },
+  "1001_MTI_FEA_XX_stretch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\fear\\1001_MTI_FEA_XX_stretch_augmented.wav",
+    "length": 2.96125,
+    "label": "fear"
+  },
+  "1001_IEO_ANG_MD": {
+    "wav": "D:\\voice-emo\\dat\\angry\\1001_IEO_ANG_MD.wav",
+    "length": 2.6359375,
+    "label": "angry"
+  },
+  "DC_su05": {
+    "wav": "D:\\voice-emo\\dat\\surprise\\DC_su05.wav",
+    "length": 7.80075,
+    "label": "surprise"
+  },
+  "1001_IEO_FEA_MD_stretch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\fear\\1001_IEO_FEA_MD_stretch_augmented.wav",
+    "length": 2.002,
+    "label": "fear"
+  },
+  "1001_IEO_HAP_MD_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_IEO_HAP_MD_pitch_augmented.wav",
+    "length": 1.6683125,
+    "label": "happy"
+  },
+  "1001_TSI_HAP_XX_stretch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_TSI_HAP_XX_stretch_augmented.wav",
+    "length": 2.711,
+    "label": "happy"
+  },
+  "1001_IWL_ANG_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\angry\\1001_IWL_ANG_XX_pitch_augmented.wav",
+    "length": 3.1698125,
+    "label": "angry"
+  },
+  "1001_IEO_DIS_HI": {
+    "wav": "D:\\voice-emo\\dat\\disgust\\1001_IEO_DIS_HI.wav",
+    "length": 2.002,
+    "label": "disgust"
+  },
+  "1001_ITH_HAP_XX_pitch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_ITH_HAP_XX_pitch_augmented.wav",
+    "length": 2.469125,
+    "label": "happy"
+  },
+  "1001_IOM_HAP_XX": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_IOM_HAP_XX.wav",
+    "length": 2.002,
+    "label": "happy"
+  },
+  "1001_IEO_ANG_HI_stretch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\angry\\1001_IEO_ANG_HI_stretch_augmented.wav",
+    "length": 2.4190625,
+    "label": "angry"
+  },
+  "1001_IWL_HAP_XX_stretch_augmented": {
+    "wav": "D:\\voice-emo\\dat\\happy\\1001_IWL_HAP_XX_stretch_augmented.wav",
+    "length": 2.627625,
+    "label": "happy"
+  },
+  "1001_MTI_NEU_XX_noise_augmented": {
+    "wav": "D:\\voice-emo\\dat\\neutral\\1001_MTI_NEU_XX_noise_augmented.wav",
+    "length": 2.3023125,
+    "label": "neutral"
+  }
+}
