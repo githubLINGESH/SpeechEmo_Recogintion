@@ -9,3 +9,4 @@ torch
 huggingface_hub
 flask
 torchaudio
+transformers
