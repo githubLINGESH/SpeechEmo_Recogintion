@@ -51,7 +51,7 @@ def preprocess_audio(audio_file):
 model_path = hf_hub_download(repo_id="Lingeshg/SpeechEmotionDetector", filename="model.pth")
     
 model = FineTunedWav2Vec2Model(wav2vec2_model, 7).to(device)
-model.load_state_dict(torch.load(model_path, map_location=device))
+model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
 model.eval()
 
 # Function to perform inference
