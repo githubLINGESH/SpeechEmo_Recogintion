@@ -2,3 +2,10 @@ tensorflow
 numpy 
 pandas
 librosa
+werkzeug
+datetime
+soundfile
+torch
+huggingface_hub
+flask
+torchaudio
