@@ -1,4 +1,4 @@
-tensorflow-directml-plugin
+tensorflow
 numpy 
 pandas
 librosa
